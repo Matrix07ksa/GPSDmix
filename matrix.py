@@ -297,6 +297,8 @@ $$/  $$/  $$/  $$$$$$$/    $$$$/  $$/       $$/ $$/   $$/
         print('FALSE ENTER CTRLS')
     except NameError:
         print('\nNO string FAlse exit\n')
+    except IOError:
+        print('Enter Link add  http:// or / ')
 if __name__ =='__main__':
     matrix()
     

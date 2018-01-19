@@ -1,10 +1,16 @@
 # Guess-Plates-and-Shell
 اداة تقوم بالتخمين على اللوحات والشل اتمنى ان ينال على اعجابكم 
 python2 
-اول شي ثبت المكتبة 
+
+
+
+اول شي ثبت المكتبة
+
 pip install termcolor
 
-بعدين مسار الملف وشغله 
+بعدين مسار الملف وشغله
+
+
 python matrix.py
 
 ![alt text](http://s01.arab.sh/i/00126/rs7quzny8xyq.png)

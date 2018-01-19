@@ -71,9 +71,9 @@ $$/  $$/  $$/  $$$$$$$/    $$$$/  $$/       $$/ $$/   $$/
 [2]} list web site
 
 [99] Back""")
-            numper1 = input("Enter the Numbet >>> ")
+            numper1 = input("Enter the nemper >>> ")
             if numper1 ==1:
-                w = raw_input("\t\tEnter the Web sit >>[ ")
+                w = raw_input("\t\tEnter the Web site >>[ ")
                 for admin in admin_path:
                     if "\n" in w:
                         if "/" not in admin:
@@ -129,7 +129,7 @@ $$/  $$/  $$/  $$$$$$$/    $$$$/  $$/       $$/ $$/   $$/
         ###############################################################################################################################################################
                         if "\n" in w:
                             if "/" not in admin:
-                                f = w.split("\n")[0]+admin
+                                f = w.split("\n")+admin
                                 ur = urllib.urlopen(f)
                                 if ur.getcode() == 200:
                                     print(colored("[+]find => "+str(f),"blue"))
@@ -184,9 +184,9 @@ $$/  $$/  $$/  $$$$$$$/    $$$$/  $$/       $$/ $$/   $$/
 [2]} list web site
 
 [99] Back""")
-            numper1 = input("Enter the Numbet >>> ")
+            numper1 = input("Enter the nemper >>> ")
             if numper1 ==1:
-                w = raw_input("Enter the Web sit >>[ ")
+                w = raw_input("Enter the Web site >>[ ")
                 for shell in shell1:
                     if "\n" in w:
                         if "/" not in shell:

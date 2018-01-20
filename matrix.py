@@ -177,7 +177,7 @@ $$/  $$/  $$/  $$$$$$$/    $$$$/  $$/       $$/ $$/   $$/
 [99] Back""")
             numper1 = input("Enter the nemper >>> ")
             if numper1 ==1:
-                w = raw_input("Enter the Web site >>[ ")
+                w = raw_input("\t\tEnter the Web site >>[ ")
                 for shell in shell1:
                     if "\n" in w:
                         if "/" not in shell:

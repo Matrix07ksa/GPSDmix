@@ -1,9 +1,12 @@
+ # -*- coding: utf-8 -*-
 import os as matrix
 import sys as n
 import time as mm
 from platform import system
 import urllib 
 from termcolor import colored
+from googlesearch import search as dork 
+import threading
 W = '\033[0m'  # white (normal)
 R = '\033[31m'  # red
 G = '\033[32m'  # green
@@ -37,28 +40,28 @@ def slow(M):
 def matrix():
     slow(R+'\t\t\t\t\n\n\n {{insta:d7_nn}}\t\t\t\tfb:matrix.gov}}')
     slow(GR+'\t\n\n{{code py/matrix}}  \t\t\t\t{{code py/muhammed}}')                
-    print(B+'''
+    print('''%s           ---_ ...... _/_ -    
+          /  .      ./ .'*\ \    
+          : '         /__-'   \. 
+         /                      )
+       _/                  >   .' 
+     /   '   .       _.-" /  .'   
+     \           __/"     /.'    
+       \ '--  .-" /     //'      
+        \|  \ | /     //    
+             \:     //
+          `\/     //
+           \__`\/ /  ASH
+               \_|
 
-__        __                      __                                              __     
-/  |      /  |                    /  |                                            /  |    
-$$ |____  $$ |  ______    _______ $$ |   __         ______    ______    ______   _$$ |_   
-$$      \ $$ | /      \  /       |$$ |  /  |       /      \  /      \  /      \ / $$   |  
-$$$$$$$  |$$ | $$$$$$  |/$$$$$$$/ $$ |_/$$/       /$$$$$$  |/$$$$$$  |/$$$$$$  |$$$$$$/   
-$$ |  $$ |$$ | /    $$ |$$ |      $$   $$<        $$ |  $$/ $$ |  $$ |$$ |  $$ |  $$ | __ 
-$$ |__$$ |$$ |/$$$$$$$ |$$ \_____ $$$$$$  \       $$ |      $$ \__$$ |$$ \__$$ |  $$ |/  |
-$$    $$/ $$ |$$    $$ |$$       |$$ | $$  |      $$ |      $$    $$/ $$    $$/   $$  $$/ 
-$$$$$$$/  $$/  $$$$$$$/  $$$$$$$/ $$/   $$/       $$/        $$$$$$/   $$$$$$/     $$$$/                                 
- _____  ____    ______   _$$ |_     ______  $$/  __    __ 
-/     \/    \  /      \ / $$   |   /      \ /  |/  \  /  |
-$$$$$$ $$$$  | $$$$$$  |$$$$$$/   /$$$$$$  |$$ |$$  \/$$/ 
-$$ | $$ | $$ | /    $$ |  $$ | __ $$ |  $$/ $$ | $$  $$<  
-$$ | $$ | $$ |/$$$$$$$ |  $$ |/  |$$ |      $$ | /$$$$  \ 
-$$ | $$ | $$ |$$    $$ |  $$  $$/ $$ |      $$ |/$$/ $$  |
-$$/  $$/  $$/  $$$$$$$/    $$$$/  $$/       $$/ $$/   $$/                                                                                        
-''')
-    slow(G+'''
+%s Matrix {https://github.com/Matrix07ksa}
+%s black root {https://github.com/Black-r00t}
+''')%(G,R,R)
+    slow(B+'''
 [1]}> Guess Plates
 [2]}> Guess SHELL
+[3}> Dork
+
 
 [99]}> exit
 		''')
@@ -279,20 +282,29 @@ $$/  $$/  $$/  $$$$$$$/    $$$$/  $$/       $$/ $$/   $$/
                                     print(colored("[!] not find => "+str(f),"red"))
                                 else:
                                     print(colored("[?] Error => "+str(f)+" status code => "+str(ur.getcode()),"red"))
+            				    
             elif numper1 == 99:
                 return matrix()
+        elif numper ==3:
+			
+			d = raw_input("write your dork:")
+			for dorkh in dork(d):
+				print(colored(dorkh,"red"))
+				do= open('dork.txt','a').write('['+dorkh+']'+'\n')  
+				     
     except SyntaxError:
         print('False Enter')
     except AttributeError:
         print('FALSE Break ')
     except KeyboardInterrupt:
         print('FALSE ENTER CTRLS')
-    except NameError:
-        print('\nNO string FAlse exit\n')
+    
     except IOError:
-        print('Enter Link add  http://')
+        print('Enter Link add   http:// or network false')
 if __name__ =='__main__':
-    matrix()
+    P = threading.Thread(target=matrix, args=[])
+    P.start()	
+
 
 
 

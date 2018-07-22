@@ -8,6 +8,7 @@ python2
 
 pip install termcolor
 pip install google 
+
 بعدين مسار الملف وشغله
 
 

@@ -7,15 +7,14 @@ python2
 اول شي ثبت المكتبة
 
 pip install termcolor
-
+pip install google 
 بعدين مسار الملف وشغله
 
 
 python matrix.py
 
-![alt text](http://s01.arab.sh/i/00126/rs7quzny8xyq.png)
-![alt text](http://s01.arab.sh/i/00126/hga0vzsbghgb.png)
-![alt text](http://s02.arab.sh/i/00126/a3s1esvmagml.png)
+![alt text](http://a.up-00.com/2018/07/153226253141962.png)
+![alt text](http://a.up-00.com/2018/07/153226253061561.png)
 
 
 

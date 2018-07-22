@@ -6,7 +6,7 @@ python2
 
 اول شي ثبت المكتبة
 
-pip install termcolor
+pip install termcolor&&
 pip install google 
 
 بعدين مسار الملف وشغله
